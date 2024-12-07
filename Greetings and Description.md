@@ -1,4 +1,5 @@
 We are a team from GSSS Institute of Engineering and Technology for Women.
+And we are happy to have gained this opportunity to participate and learn.
 Initially, we thought of modeling a different kind of game. But due to lack of resources from our side, we couldn't complete it.
 So, we decided to design a simple game instead.
 This game, 
