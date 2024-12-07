@@ -29,7 +29,7 @@ background = pygame.transform.scale(background, (WIDTH, HEIGHT))
 character = pygame.transform.scale(character, (70, 120))
 arrow_img = pygame.transform.scale(arrow_img, (90, 50))
 duryodhana = pygame.transform.scale(duryodhana, (70, 120))
-star_size = (50, 50)
+star_size = (30, 30)
 filled_star = pygame.transform.scale(filled_star, star_size)
 empty_star = pygame.transform.scale(empty_star, star_size)
 
@@ -139,7 +139,7 @@ def run_level(level):
        
         for arrow in arrows:
             arrow_rect = pygame.Rect(arrow[0], arrow[1], 70, 30)
-            target_rect = pygame.Rect(target_x, target_y, 50, 50)
+            target_rect = pygame.Rect(target_x, target_y, 70, 120)
             if arrow_rect.colliderect(target_rect):
                 print("Hit Duryodhana!")
                 arrows.remove(arrow)
@@ -180,8 +180,8 @@ def run_level(level):
 
         
         if remaining_time <= 0:
-            print("Time's Up!")
-            running = False
+           timer_text = font.render(f"Time's up", True, WHITE)
+           running = False
 
        
         pygame.display.flip()
